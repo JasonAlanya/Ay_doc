@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Estilos para la portada*/
+.portada{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.portada figure{
+    width: 100%;
+    position: relative;
+}
+.portada figure img{
+    width: 100%;
+}
+.portada p{
+    position: absolute;
+    width: 55%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: -20%;
+}
+.botones-inicio{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    justify-content: center;
+}
+.botones-inicio button{
+    width: 20%;
+    margin: 2%;;
+}
+.servicios{
+    margin-top: 110vh;
+    background-color: rgb(47, 62, 107);
+}
+
+.servicios h1{
+    color: #fff;
+    padding-top: 1.5em;
+    text-align: center;
+    font-family: 'Roboto', 'Russo One', sans-serif;
+}
+
+.cuadros-servicio{
+    display: grid;
+    padding: 3em 4em 3em 4em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.servicio{
+    background-color: rgb(209, 218, 219);
+    justify-content: center;
+    display: grid;
+    padding: 20% 20%;
+}
+
+.servicio:hover{
+    transform: scale(1.02);
+}
+
+.servicio h2{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 1.3em;
+    color: #000;
+}
+
+.servicio img{
+    width: 70%;
+    margin: 0 15%;
+}
+footer{
+    padding: 2% 0%;
+}
+footer h1{
+    text-align: center;
+    font-size: 2em;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0px 20px;
+}
+.social-link.facebook{
+    background-image: url('../Imagenes/facebook.svg');
+}
+.social-link.instagram{
+    background-image: url('../Imagenes/instagram.svg');
+}
