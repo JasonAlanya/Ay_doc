@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 /*Estilos para la portada*/
 .portada{
@@ -31,11 +32,40 @@
     position: absolute;
     width: 50%;
     justify-content: center;
+    height: 3em;
+    text-decoration: none;
 }
-.botones-inicio button{
-    width: 20%;
-    margin: 2%;;
+.botones-inicio a{
+    width: 25%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 0.5em;
+    text-decoration: none;
 }
+
+.boton_agendas{
+    background-color: rgb(47, 62, 107);
+    color: white;
+}
+
+.boton_noticias{
+    background-color: rgb(209, 218, 219);
+    color: #000;
+}
+
+.boton_agendas:hover{
+    background-color: rgb(29, 66, 177);
+    color: white;
+}
+
+.boton_noticias:hover{
+    background-color: rgb(242, 250, 250);
+    color: #000;
+}
+
 .servicios{
     margin-top: 110vh;
     background-color: rgb(47, 62, 107);
@@ -77,8 +107,108 @@
     width: 70%;
     margin: 0 15%;
 }
+
+.imagen_portada, .imagen_portada img{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    z-index: -1;
+}
+
+.noticias h1{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0.5em;
+}
+
+.cuadros-noticias{
+    display: grid;
+    padding: 2em 3em 2em 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.cuadros-noticias a{
+    text-decoration: none;
+    border-color: white;
+}
+
+.noticia{
+    border: 2px;
+    border-style: solid;
+}
+.noticia p, .noticia h2{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.noticia img{
+    width: 100%;
+    height: 300px;
+    background-color: silver;
+}
+
+/*Estelilos de sección para lso profesionales*/
+.productos_top h1{
+    color: #fff;
+    padding-top: 1.5em;
+    text-align: center;
+    font-family: 'Roboto', 'Russo One', sans-serif;
+}
+
+.cuadros-producto{
+    display: grid;
+    padding: 3em 10em 3em 10em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.producto{
+    background-color: #fff;
+    justify-content: center;
+    display: grid;
+    padding: 0 10%;
+}
+
+.producto h2{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 1em;
+    color: #003862;
+}
+
+.producto img{
+    width: 90%;
+}
+
+.producto button{
+    margin: 2em 0;
+    border: 0;
+    background-color: #003862;
+    padding: 0.5em 0;
+}
+
+.producto button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.producto a{
+    padding: 2em 2em;
+    height: 100vh;
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
 footer{
     padding: 2% 0%;
+    background-color: white;
 }
 footer h1{
     text-align: center;
