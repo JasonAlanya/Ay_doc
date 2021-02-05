@@ -26,7 +26,7 @@
     position: absolute;
     width: 55%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: bolder;
     color: #fff;
     margin-top: -20%;
@@ -328,11 +328,14 @@ footer h1{
     }
     .cuadros-servicio, .cuadros-producto, .cuadros-noticias{
         padding: 1em 2em 1em 2em;
-        grid-template-columns: 3fr;
+        grid-template-columns: 1fr;
         margin: 0 1.5em;
     }
     .servicio img{
         width: 80%;
+    }
+    .servicio:hover{
+        transform: scale(1);
     }
     .productos_top h1{
         font-size: 1.4em;
@@ -357,6 +360,78 @@ footer h1{
     footer h1{
         text-align: center;
         font-size: 1em;
+    }
+    .social-link{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        margin: 0px 20px;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 1000px){
+    .imagenprincipal img{
+        height: 600px;
+    }
+
+    .portada, .portada-nosotros{
+        height: 500px;
+    }
+    
+    .portada p{
+        font-size: 1.5em;
+        width: 80%;
+        font-weight: bolder;
+        color: #fff;
+        margin-top: -20%;
+    }
+
+    .botones-inicio{
+        height: 2em;
+    }
+
+    .botones-inicio a{
+        width: 40%;
+        font-size: 0.9em;
+    }
+    .servicios h1{
+        font-size: 1.7em;
+    }
+    .cuadros-servicio, .cuadros-producto, .cuadros-noticias{
+        padding: 1em 2em 1em 2em;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1.5em;
+    }
+    .servicio img{
+        width: 50%;
+        margin: 0 25%;
+    }
+    .servicio:hover{
+        transform: scale(1);
+    }
+    .productos_top h1{
+        font-size: 1.4em;
+    }
+
+    .portada-nosotros p{
+        font-size: 1em;
+        padding-bottom: 3em;
+    }
+    .portada-nosotros h1{
+        font-size: 1.4rem;
+    }
+    .cuadros-equipo{
+        padding: 1em 2em 1em 2em;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 0.5em;
+    }
+    .integrante h1, .integrante h2{
+        font-size: 1em;
+    }
+
+    footer h1{
+        text-align: center;
+        font-size: 1.5em;
     }
     .social-link{
         display: inline-block;
