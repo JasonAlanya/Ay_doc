@@ -4,25 +4,29 @@
     cursor: default;
 }
 /*Estilos para la portada*/
-.portada{
+.imagenprincipal, .imagenprincipal img{
     width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.imagenprincipal img{
+    height: 120vh;
+}
+
+.portada{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    position: absolute;
-}
-.portada figure{
-    width: 100%;
-    position: relative;
-}
-.portada figure img{
+    height: 100vh;
     width: 100%;
 }
+
 .portada p{
     position: absolute;
     width: 55%;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: #fff;
     margin-top: -20%;
@@ -67,13 +71,12 @@
 }
 
 .servicios{
-    margin-top: 110vh;
     background-color: rgb(47, 62, 107);
 }
 
 .servicios h1{
     color: #fff;
-    padding-top: 1.5em;
+    padding-top: 1em;
     text-align: center;
     font-family: 'Roboto', 'Russo One', sans-serif;
 }
@@ -205,6 +208,68 @@
     height: 100%;
     width: 100%;
 }
+
+.portada-nosotros{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255,255,255,0.1));
+}
+
+.portada-nosotros p{
+    position: absolute;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: -10%;
+}
+.portada-nosotros h1{
+    position: absolute;
+    width: 80%;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #fff;
+}
+.equipo{
+    background-color: rgb(47, 62, 107);
+}
+
+.equipo h1{
+    color: #fff;
+    padding-top: 1em;
+    text-align: center;
+    font-family: 'Roboto', 'Russo One', sans-serif;
+}
+
+.cuadros-equipo{
+    display: grid;
+    padding: 3em 4em 3em 4em;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.perfil{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 5%;
+    border-radius: 30px;
+}
+.foto img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.integrante h1{
+    color: rgb(36, 181, 201);
+    text-align: left;
+}
+
+
 
 footer{
     padding: 2% 0%;
