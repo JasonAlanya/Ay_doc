@@ -12,26 +12,26 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!--La sección header tendrá el logo y las diferentes secciones de la página-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(47, 62, 107);">
+        <a class="navbar-brand">
+            <img src="imagenes/logotipo.png" height="50px" alt="Logotipo principal de la empresa">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="noticias.html">Noticias</a>
+                <a class="nav-item nav-link" href="profesionales.html">Nuestros profesionales</a>
+                <a class="nav-item nav-link" href="nosotros.html">Acerca de nosotros</a>
+            </div>
+        </div>
+    </nav>
     <Figure class="imagenprincipal">
         <img src="imagenes/portada_inicio.jpg" alt="Foto de portada inicio">
     </Figure>
-    <!--La sección header tendrá el logo y las diferentes secciones de la página-->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(47, 62, 107);">
-            <a class="navbar-brand">
-                <img src="imagenes/logotipo.png" height="50px" alt="Logotipo principal de la empresa">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">Inicio<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="noticias.html">Noticias</a>
-                    <a class="nav-item nav-link" href="profesionales.html">Nuestros profesionales</a>
-                    <a class="nav-item nav-link" href="nosotros.html">Acerca de nosotros</a>
-                </div>
-            </div>
-        </nav>
     <!--Sección para la portada-->
     <section class="portada">
         <p class="texto inicio">
@@ -49,7 +49,7 @@
                 <img src="imagenes/triaje.png" alt="">
                 <h2>Triaje</h2>
             </a>
-            <a class="servicio" href="">
+            <a class="servicio" href="noticias.html">
                 <img src="imagenes/informate.png" alt="">
                 <h2>Informate</h2>
             </a>
@@ -70,5 +70,8 @@
             <a href="" class="social-link instagram"></a>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -297,3 +297,72 @@ footer h1{
 .social-link.instagram{
     background-image: url('../imagenes/instagram.svg');
 }
+
+@media only screen and (max-width: 420px){
+    .imagenprincipal img{
+        height: 50vh;
+    }
+
+    .portada, .portada-nosotros{
+        height: 50vh;
+    }
+    
+    .portada p{
+        font-size: 1em;
+        width: auto;
+        font-weight: bolder;
+        color: #fff;
+        margin-top: -20%;
+    }
+
+    .botones-inicio{
+        height: 2em;
+    }
+
+    .botones-inicio a{
+        width: 90%;
+        font-size: 0.6em;
+    }
+    .servicios h1{
+        font-size: 1.7em;
+    }
+    .cuadros-servicio, .cuadros-producto, .cuadros-noticias{
+        padding: 1em 2em 1em 2em;
+        grid-template-columns: 3fr;
+        margin: 0 1.5em;
+    }
+    .servicio img{
+        width: 80%;
+    }
+    .productos_top h1{
+        font-size: 1.4em;
+    }
+
+    .portada-nosotros p{
+        font-size: 1rem;
+        padding-bottom: 3em;
+    }
+    .portada-nosotros h1{
+        font-size: 1.4rem;
+    }
+    .cuadros-equipo{
+        padding: 1em 2em 1em 2em;
+        grid-template-columns: 3fr;
+        margin: 0 0.5em;
+    }
+    .integrante h1, .integrante h2{
+        font-size: 1em;
+    }
+
+    footer h1{
+        text-align: center;
+        font-size: 1em;
+    }
+    .social-link{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        margin: 0px 20px;
+    }
+}
